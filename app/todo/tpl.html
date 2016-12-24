@@ -1,0 +1,11 @@
+<div>
+           Filter <input type="text" ng-model="tasksFilter">
+       </div>
+        <ul>
+<!--        for (var i in list)-->
+         <li ng-repeat="task in tasks |
+            filter: tasksFilter">
+             Title: {{task.title}}
+         </li>   
+        </ul>
+        <h2>Tasks to do - {{tasks.lenght}}</h2>

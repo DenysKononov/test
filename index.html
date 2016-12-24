@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body ng-app="app">
+   <main ng-conroller="main">
+   
+   <h1 ng-bind="header"></h1>
+ <div>
+         <label>
+           Task Name: <input type="text"
+           ng-model="newTaskName">
+           <button ng-cklik="updateTasks()">ADD</button>
+         </label>
+     </div>
+      
+      
+       <to-do-list data="tasks"></to-do-list>
+       
+   </main>
+    
+    <script src="libs/angular.js"></script>
+    <script src="app/services/tasks.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/todo/controller.js"></script>
+    <script src="app/todo/directive.js"></script>
+</body>
+</html>
